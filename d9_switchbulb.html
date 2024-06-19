@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+     <img src="./image-removebg-preview (3).png" alt="" width="400px" height="500px" onmouseover="switchon()"
+        onmouseout="switchoff()">
+    <br>
+    <button onclick="switchon()">Switch On</button>
+    <button onclick="switchoff()">Switch Off</button>
+
+    <script>
+        function switchon() {
+            document.querySelector('img').src = "image-removebg-preview (1).png"
+        }
+        function switchoff() {
+            document.querySelector('img').src = "image-removebg-preview (3).png"
+        }
+
+
+
+    </script>
+
+    <!-- <img src="./off.png" alt="" width="400px" height="500px" onmouseover="switchon()" onmouseout="switchoff()">
+    <br>
+    <button onclick="switchon()">on</button>
+    <button onclick="switchoff()">off</button>
+
+    <script>
+        function switchon(){
+            document.querySelector('img').src = "on.png"
+        }
+        function switchoff(){
+            document.querySelector('img').src = "off.png"
+        }
+    </script> -->
+
+</body>
+
+</html>
