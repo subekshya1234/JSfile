@@ -18,5 +18,25 @@ function fnamevalidate() {
 
     else{
         displaymsg('first name is valid','fnameMsg','green')
+        return true
+    }
+}
+
+// LAST NAME
+function Lnamevalidate() {
+    let input = document.getElementById('Lname').value
+    if (input == '') {
+
+        displaymsg('Last Name is mandotory', 'LnameMsg', 'red')
+    }
+
+    else if (input.length < 3) {
+        displaymsg('Last Name should be more than 3 characters', 'LnameMsg', 'red')
+        return false
+    }
+
+    else{
+        displaymsg('Last Name is valid','LnameMsg','green')
+        return true
     }
 }
