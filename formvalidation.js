@@ -40,3 +40,42 @@ function Lnamevalidate() {
         return true
     }
 }
+
+function emailvalidate() {
+    let input = document.getElementById('email').value
+    if (input == '') {
+
+        displaymsg('email is mandotory', 'emailMsg', 'red')
+    }
+
+    else if(!input.match(/^([a-zA-Z])[a-zA-Z0-9\-\.\_]+\@+([a-zA-Z])+\.+([a-z])$/)){
+        displaymsg('someone@123.gmail.com','emailMsg','blue')
+    }
+
+
+    else{
+        displaymsg('email is valid','emailMsg','green')
+        return true
+    }
+}
+
+function Passwordvalidate() {
+    let input = document.getElementById('Password').value
+    if (input == '') {
+
+        displaymsg('Passwordf is mandotory', 'PasswordMsg', 'red')
+    }
+
+    else if(!input.match(/(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$*!?]).{8,}$/)){
+        displaymsg('someone@123.gmail.com','emailMsg','blue')
+    }     
+
+
+    else{
+        displaymsg('Password is valid','PasswordMsg','green')
+        return true
+    }
+}
+
+
+
