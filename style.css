@@ -16,3 +16,16 @@ h1{
     text-align: center;
 }
 
+header nav ul{
+list-style-type: none;
+}
+
+img{
+    height: 800px;
+    width: 900px;
+}
+
+
+
+
+
